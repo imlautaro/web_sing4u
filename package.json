@@ -22,7 +22,8 @@
     "@nuxt/eslint": "^1.9.0",
     "eslint": "^9.35.0",
     "typescript": "^5.9.2",
-    "vue-tsc": "^3.0.7"
+    "vue-tsc": "^3.0.7",
+    "wrangler": "^4.43.0"
   },
   "resolutions": {
     "unimport": "4.1.1"

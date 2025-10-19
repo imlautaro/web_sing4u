@@ -23,6 +23,27 @@ export default defineNuxtConfig({
     '/': { prerender: true }
   },
 
+  nitro: {
+    preset: 'cloudflare-module',
+    cloudflare: {
+      deployConfig: true,
+      nodeCompat: true,
+      wrangler: {
+        name: 'web-sing4u',
+        routes: [
+          {
+            pattern: 'www.sing4u.app',
+            custom_domain: true
+          },
+          {
+            pattern: 'sing4u.app',
+            custom_domain: true
+          }
+        ]
+      }
+    }
+  },
+
   compatibilityDate: '2025-01-15',
 
   eslint: {
